@@ -16,6 +16,7 @@ data_atualizacao = datetime(ano, mes, dia)
 diretorio_atual = os.path.dirname(__file__)
 caminho_arquivo = os.path.join(
     diretorio_atual, '../data/' + nome_arquivo)
+
 with open(caminho_arquivo, encoding='utf8') as arquivo:
     conteudo_csv = csv.reader(arquivo)
     cabecalhos = next(conteudo_csv)
